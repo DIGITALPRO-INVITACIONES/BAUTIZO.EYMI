@@ -1,8 +1,8 @@
 BAUTIZO DE EYMI KHALEESI — INVITACIÓN ACTUALIZADA
 Descomprime y sube todos los archivos de esta carpeta a la raíz del repositorio de GitHub Pages. Conserva los nombres. No subas únicamente index.html.
-Fecha confirmada: sábado 10 de octubre de 2026. Calendario con corazón el día 10 y cuenta regresiva hasta las 14:00 de ese día, hora de Bolivia. Misa: 14:00. Recepción: 15:30. Papás: Max Arnez Guzman y Carla Ferrufino Pastor. Dirección de recepción: Barrio Don Bosco, Av. Santo Domingo.
+Fecha confirmada: sábado 10 de octubre de 2026. Calendario con corazón el día 10 y cuenta regresiva hasta las 14:00 de ese día, hora de Bolivia. Misa: 14:00. Recepción: 15:00. Papás: Max Arnez Guzman y Carla Ferrufino Pastor. Dirección de recepción: Barrio Don Bosco, Av. Santo Domingo.
 Confirmación por WhatsApp al +591 75473373 con mensaje para completar nombre y número de asistentes.
 La canción se inicia al tocar la nube; el botón musical permite pausar o intentar reproducir si el navegador bloquea el audio.
-Las fotos son composiciones generadas a partir de las fotos suministradas. La nube y las mariposas se animan con CSS; la cara no es un video animado. Se respeta la preferencia de reducir movimiento.
+Las fotos son composiciones generadas a partir de las fotos suministradas. La nube de portada, los pétalos y las pequeñas nubes que caen se animan con CSS; la cara no es un video animado. Se respeta la preferencia de reducir movimiento.
 
 

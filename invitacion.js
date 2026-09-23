@@ -4,7 +4,13 @@ const icons={cross:'<path d="M26 5h12v17h17v12H38v25H26V34H9V22h17Z"/>',heart:'<
 document.querySelectorAll('[data-icon]').forEach(el=>{el.innerHTML='<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+icons[el.dataset.icon]+'</svg>';el.setAttribute('aria-hidden','true')});
 function state(){toggle.textContent=music.paused?'♫':'Ⅱ';toggle.setAttribute('aria-label',music.paused?'Reproducir música':'Pausar música');toggle.setAttribute('aria-pressed',String(!music.paused))}music.addEventListener('play',state);music.addEventListener('pause',state);toggle.onclick=()=>music.paused?music.play().catch(state):music.pause();
 $('open').onclick=()=>{ $('open').disabled=true;music.volume=.65;music.play().catch(state);$('cover').classList.add('opening');setTimeout(()=>{$('cover').hidden=true;$('invitation').hidden=false;toggle.hidden=false;window.scrollTo(0,0);const heading=document.querySelector('.hero h1');heading.tabIndex=-1;heading.focus({preventScroll:true})},matchMedia('(prefers-reduced-motion:reduce)').matches?0:950)};
-for(let i=0;i<7;i++){const b=document.createElement('i');b.className='butterfly';b.style.cssText=`--top:${12+i*12}%;--duration:${20+i*3}s;--delay:${-i*6}s`;$('butterflies').appendChild(b)}
+for(let i=0;i<16;i++){
+ const item=document.createElement('i');
+ item.className=i%4===0?'falling-cloud':'falling-petal';
+ item.style.cssText=`left:${(i*23+7)%100}%;--duration:${i%4===0?32+i:16+i}s;--delay:${-i*3}s;--drift:${i%2===0?50:-50}px`;
+ $('falling-decor').appendChild(item);
+}
+document.addEventListener('visibilitychange',()=>{$('falling-decor').classList.toggle('paused',document.hidden)});
 const c=window.BAUTIZO;if(c.anio){$('date-strip').hidden=true;$('calendar').hidden=false;const labels=['L','M','M','J','V','S','D'];labels.forEach(x=>{const el=document.createElement('span');el.textContent=x;$('calendar').append(el)});const offset=(new Date(c.anio,9,1).getDay()+6)%7;for(let i=0;i<offset+31;i++){const el=document.createElement('span');const d=i-offset+1;if(d>0){el.textContent=d;if(d===10){el.className='chosen';el.setAttribute('aria-label','10 de octubre, mi bautizo')}}$('calendar').append(el)}}
 [['church-time',c.horaCeremonia],['party-time',c.horaRecepcion]].forEach(([id,v])=>{if(v){$(id).textContent=v;$(id).hidden=false}});
 if(c.fechaCuentaRegresiva&&!isNaN(Date.parse(c.fechaCuentaRegresiva))){$('countdown-wrap').hidden=false;function tick(){const t=Math.max(0,Math.floor((Date.parse(c.fechaCuentaRegresiva)-Date.now())/1000));$('countdown').innerHTML=[Math.floor(t/86400),Math.floor(t/3600)%24,Math.floor(t/60)%60,t%60].map((v,i)=>'<div><strong>'+String(v).padStart(2,'0')+'</strong><span>'+['Días','Horas','Minutos','Segundos'][i]+'</span></div>').join('')}tick();setInterval(tick,1000)}
