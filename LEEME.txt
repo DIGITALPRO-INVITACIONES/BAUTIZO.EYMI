@@ -1,0 +1,7 @@
+BAUTIZO DE EYMI KHALEESI — PRIMERA VERSIÓN
+Descomprime y sube todos los archivos de esta carpeta a la raíz del repositorio de GitHub Pages. Conserva los nombres. No subas únicamente index.html.
+Fecha confirmada: sábado 10 de octubre de 2026. Calendario con corazón el día 10 y cuenta regresiva hasta las 00:00 de ese día, hora de Bolivia. Pendientes: horarios de los eventos y nombres de los papás.
+Confirmación por WhatsApp al +591 75473373 con mensaje para completar nombre y número de asistentes.
+La canción se inicia al tocar la nube; el botón musical permite pausar o intentar reproducir si el navegador bloquea el audio.
+Las fotos son composiciones generadas a partir de las fotos suministradas. La nube y las mariposas se animan con CSS; la cara no es un video animado. Se respeta la preferencia de reducir movimiento.
+
